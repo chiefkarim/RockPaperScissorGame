@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.waviy{
+    color: white;
+    position: relative;
+    top:-21vh;
+    
+}
+.waviy span{
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes flip {
+ 0%,80%{
+     transform: rotateY(360deg);
+}   
+}
+.btn{
+position: relative;
+left: 43%;
+}
+button{
+  
+  padding:20px;
+   float: left;
+   bottom: 0;
+   top: 0;
+   cursor: pointer;
+   border-radius:0px;
+   text-transform: uppercase;
+   font-family: 'Montserraat', sans-serif;
+   font-weight: 400;
+   letter-spacing: 3px;
+   transition: all .4s ease-in-out;
+   border:solid 2px #fff;
+   background: transparent;
+   color:#fff !important;
+}
+button:hover{
+    
+            transition: all .4s ease-in-out;
+            border:solid 2px #fff;
+            background: #fff;
+            color: #1f1f1f !important;
+}
+
+.weapons{
+    display: none;
+    position: relative;
+left: 15%;
+}
+img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.scoor{
+    color:white;
+    display:none;
+    position: relative;
+    top:145px;
+    justify-content: center;
+    
+}
